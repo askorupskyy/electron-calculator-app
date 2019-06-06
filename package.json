@@ -1,0 +1,14 @@
+{
+  "name": "calcular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "rcbxd",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.2"
+  }
+}

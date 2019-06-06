@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+  @keyframes input {
+    0% {
+      background-color: #515A7D;
+    }
+    50% {
+      background-color: #474F6D;
+    }
+    100% {
+      background-color: #515A7D;
+    }
+  }
+  
+  .run-animation {
+    position: relative;
+    animation: input 0.2s ease-in-out;
+  }
+  
+  .main {
+    font-family: "Open Sans";
+    position: relative;
+    left: 50%;
+    margin-left: -170px;
+    display: inline-block;
+    background: #515A7D;
+    border: 10px;
+    border-color: inherit;
+    width: 340px;
+    height: auto;
+  }
+  
+  td {
+      z-index: 0;
+  }
+
+  .textview {
+    margin: 0;
+    width: 340px;
+    height: 80px;
+    border: 0px;
+    background-color: #20213E;
+    color: white;
+    display: inline-block;
+    font-size: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: 0;
+  }
+  
+  .button {
+    height: 74px;
+    width: 80px;
+    border: 0;
+    color: white;
+    background: #515A7D;
+    font-size: 24px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #null {
+    width: 200%;
+  }
+  #main {
+    display: none;
+  }
+
+  .ripple {
+    animation: scale 0.5s ease-in;  
+    background:white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
